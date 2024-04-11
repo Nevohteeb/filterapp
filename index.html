@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Property Search</h1>
+    </header>
+
+    <div class="filter-container">
+
+        <!-- Location Filter -->
+        <div class="filter">
+            <label for="location">Location:</label>
+            <select name="location" id="location" class="full-width-select">
+                <option value="">All of New Zealand</option>
+                <option value="Northland">Northland</option>
+                <option value="Auckland">Auckland</option>
+                <option value="Waikato">Waikato</option>
+                <option value="Bay Of Plenty">Bay Of Plenty</option>
+                <option value="Gisborne">Gisborne</option>
+                <option value="Hawkes Bay">Hawkes Bay</option>
+                <option value="Taranaki">Taranaki</option>
+                <option value="Manawatu">Manawatu</option>
+                <option value="Wellington">Wellington</option>
+                <option value="Nelson">Nelson</option>
+                <option value="Marlborough">Marlborough</option>
+                <option value="West Coast">West Coast</option>
+                <option value="Canterbury">Canterbury</option>
+                <option value="Otago">Otago</option>
+                <option value="Southland">Southland</option>
+              </select>
+        </div>
+
+        <!-- Bedrooms -->
+        <div class="filter">
+            <label for="bedrooms">Bedrooms Min:</label>
+            <select name="bedrooms" id="bedrooms" class="full-width-select">
+                <option value="">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
+                <option value="6">6+</option>
+              </select>
+        </div>
+
+        <!-- Bathrooms -->
+        <div class="filter">
+            <label for="bathrooms">Bathrooms Min:</label>
+            <select name="bathrooms" id="bathrooms" class="full-width-select">
+                <option value="">Any</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4 or more</option>
+              </select>
+        </div>
+
+        <!-- Price Min -->
+        <div class="filter">
+            <label for="priceMin">Price Min:</label>
+            <select name="priceMin" id="priceMin" class="full-width-select">
+                <option value="">Any</option>
+                <option value="100000">$100k</option>
+                <option value="200000">$200k</option>
+                <option value="300000">$300k</option>
+                <option value="400000">$400k</option>
+                <option value="500000">$500k</option>
+                <option value="600000">$600k</option>
+                <option value="300000">$700k</option>
+                <option value="400000">$800k</option>
+                <option value="500000">$900k</option>
+                <option value="600000">$1M</option>
+              </select>
+        </div>
+
+        <!-- Price Max -->
+        <div class="filter">
+            <label for="priceMax">Price Max:</label>
+            <select name="priceMax" id="priceMax" class="full-width-select">
+                <option value="">Any</option>
+                <option value="100000">$100k</option>
+                <option value="200000">$200k</option>
+                <option value="300000">$300k</option>
+                <option value="400000">$400k</option>
+                <option value="500000">$500k</option>
+                <option value="600000">$600k</option>
+                <option value="300000">$700k</option>
+                <option value="400000">$800k</option>
+                <option value="500000">$900k</option>
+                <option value="600000">$1M</option>
+              </select>
+        </div>   
+    </div>
+
+    <!-- Results Grid -->
+    <div class="results" id="results">
+
+        <!-- Property Cards -->
+        <div class="property">
+            <img src="./img/test-prop.jpg" alt="" class="property-image">
+            <div class="property-details">
+                <h2>Property name</h2>
+                <p>Location</p>
+                <div class="more-details">
+                    <div class="property-ammenities">
+                        <p>3 <i class="fa-solid fa-bed"></i></p>
+                        <p>3 <i class="fa-solid fa-bath"></i></p>
+                    </div>
+                    <h4>$146,000</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="property">
+            <img src="./img/test-prop.jpg" alt="" class="property-image">
+            <div class="property-details">
+                <h2>Property name</h2>
+                <p>Location</p>
+                <div class="more-details">
+                    <div class="property-ammenities">
+                        <p>3 <i class="fa-solid fa-bed"></i></p>
+                        <p>3 <i class="fa-solid fa-bath"></i></p>
+                    </div>
+                    <h4>$146,000</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c252db7e5f.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
