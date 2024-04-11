@@ -521,32 +521,38 @@ function filterProperties() {
 }
 
 
-// Create the function to popluate the results:
 function populateResults(filteredResults) {
     const resultsDiv = document.getElementById("results");
     // Clear previous results
     resultsDiv.innerHTML = "";
 
-    filteredResults.forEach(property => {
-        // Create HTML string for property card
-        const propertyCardHTML = `
-            <div class="property">
-                <img src="${property.image}" alt="" class="property-image">
-                <div class="property-details">
-                    <h2>${property.name}</h2>
-                    <p>${property.location}</p>
-                    <div class="more-details">
-                        <div class="property-amenities">
-                            <p>${property.bedrooms} <i class="fa-solid fa-bed"></i></p>
-                            <p>${property.bathrooms} <i class="fa-solid fa-bath"></i></p>
+    if (filteredResults.length === 0) {
+        // If filteredResults is empty, display a message
+        resultsDiv.innerHTML = `<p class="no-results">No Results found</p>`;
+    } else {
+        // If filteredResults is not empty, populate with property cards
+        filteredResults.forEach(property => {
+            // Create HTML string for property card
+            const propertyCardHTML = `
+                <div class="property">
+                    <img src="${property.image}" alt="" class="property-image">
+                    <div class="property-details">
+                        <h2>${property.name}</h2>
+                        <p>${property.location}</p>
+                        <div class="more-details">
+                            <div class="property-amenities">
+                                <p>${property.bedrooms} <i class="fa-solid fa-bed"></i></p>
+                                <p>${property.bathrooms} <i class="fa-solid fa-bath"></i></p>
+                            </div>
+                            <h4>${property.price}</h4>
                         </div>
-                        <h4>${property.price}</h4>
                     </div>
                 </div>
-            </div>
-        `;
-        // Append property card HTML to results div
-        resultsDiv.innerHTML += propertyCardHTML;
-    });
+            `;
+            // Append property card HTML to results div
+            resultsDiv.innerHTML += propertyCardHTML;
+        });
+    }
 }
+
 
