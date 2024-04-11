@@ -492,7 +492,9 @@ filterAndPopulateResults();
 function filterProperties() {
     const filteredProperties = properties.filter(property => {
         // Check if location matches
-        if (locationFilter.value && property.location.toLowerCase().indexOf(locationFilter.value.toLowerCase()) === -1) {
+        const propertyLocation = property.location.toLowerCase();
+        const filterValue = locationFilter.value.toLowerCase();
+        if (filterValue && !propertyLocation.includes(filterValue)) {
             return false;
         }
         // Check if number of bedrooms matches
@@ -504,7 +506,7 @@ function filterProperties() {
             return false;
         }
         // Check if price falls within the specified range
-        const priceValue = parseFloat(property.price.replace(/\$/g, '').replace(/,/g, ''));
+        const priceValue = parseFloat(property.price.replace(/\$/g, '').replace(/,/g, '')); // remove $ or , from the price
         const minPrice = parseFloat(priceMin.value);
         const maxPrice = parseFloat(priceMax.value);
         if ((minPrice && priceValue < minPrice) || (maxPrice && priceValue > maxPrice)) {
@@ -517,6 +519,7 @@ function filterProperties() {
     // Return the filtered properties array
     return filteredProperties;
 }
+
 
 // Create the function to popluate the results:
 function populateResults(filteredResults) {
