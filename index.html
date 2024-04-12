@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
@@ -102,39 +105,22 @@
     <!-- Results Grid -->
     <div class="results" id="results">
 
-        <!-- Property Cards -->
-        <div class="property">
-            <img src="./img/test-prop.jpg" alt="" class="property-image">
-            <div class="property-details">
-                <h2>Property name</h2>
-                <p>Location</p>
-                <div class="more-details">
-                    <div class="property-ammenities">
-                        <p>3 <i class="fa-solid fa-bed"></i></p>
-                        <p>3 <i class="fa-solid fa-bath"></i></p>
-                    </div>
-                    <h4>$146,000</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="property">
-            <img src="./img/test-prop.jpg" alt="" class="property-image">
-            <div class="property-details">
-                <h2>Property name</h2>
-                <p>Location</p>
-                <div class="more-details">
-                    <div class="property-ammenities">
-                        <p>3 <i class="fa-solid fa-bed"></i></p>
-                        <p>3 <i class="fa-solid fa-bath"></i></p>
-                    </div>
-                    <h4>$146,000</h4>
-                </div>
-            </div>
-        </div>
-
     </div>
 
+    <!-- Modal HTML Structure -->
+    <dialog id="details-modal">
+        <button id="close-modal"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-contents">
+            <h2>${property.name}</h2>
+            <p>${property.location}</p>
+            <p>${property.bedrooms} <i class="fa-solid fa-bed"></i></p>
+            <p>${property.bathrooms} <i class="fa-solid fa-bath"></i></p>
+            <h4>${property.price}</h4>
+        </div>
+    </dialog>
+
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/c252db7e5f.js" crossorigin="anonymous"></script>
     <!-- Custom JS -->

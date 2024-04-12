@@ -434,7 +434,6 @@ const properties = [
     }
 ];
 
-
 // Get input elements:
 const locationFilter = document.getElementById("location");
 const bedroomsFilter = document.getElementById("bedrooms");
@@ -534,25 +533,72 @@ function populateResults(filteredResults) {
         filteredResults.forEach(property => {
             // Create HTML string for property card
             const propertyCardHTML = `
-                <div class="property">
-                    <img src="${property.image}" alt="" class="property-image">
-                    <div class="property-details">
-                        <h2>${property.name}</h2>
-                        <p>${property.location}</p>
-                        <div class="more-details">
-                            <div class="property-amenities">
-                                <p>${property.bedrooms} <i class="fa-solid fa-bed"></i></p>
-                                <p>${property.bathrooms} <i class="fa-solid fa-bath"></i></p>
-                            </div>
-                            <h4>${property.price}</h4>
+            <div class="property">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="${property.image}" alt="" class="property-image"></div>
+                    <div class="swiper-slide"><img src="${property.image}" alt="" class="property-image"></div>
+                    <div class="swiper-slide"><img src="${property.image}" alt="" class="property-image"></div>
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                </div>
+                <div class="property-details">
+                    <h2>${property.name}</h2>
+                    <p>${property.location}</p>
+                    <div class="more-details">
+                        <div class="property-amenities">
+                            <p>${property.bedrooms} <i class="fa-solid fa-bed"></i></p>
+                            <p>${property.bathrooms} <i class="fa-solid fa-bath"></i></p>
                         </div>
+                        <h4>${property.price}</h4>
                     </div>
                 </div>
+            </div>
             `;
             // Append property card HTML to results div
             resultsDiv.innerHTML += propertyCardHTML;
+            attachClickToImages();
         });
     }
 }
 
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true, // Enable clickable pagination bullets
+    },
+});
+
+
+function attachClickToImages() {
+    const images = document.querySelectorAll('.property-image');
+    const detailsModal = document.getElementById('details-modal');
+
+    for (let i = 0; i < images.length; i++) {
+        images[i].addEventListener('click', function(e) {
+            console.log("image clicked");
+            detailsModal.showModal();
+            closeDetailsModal()
+        })
+    }
+}
+
+function closeDetailsModal() {
+    const close = document.getElementById('close-modal');
+    const detailsModal = document.getElementById('details-modal');
+    close.addEventListener('click', function() {
+        detailsModal.close()
+    });
+}
 
