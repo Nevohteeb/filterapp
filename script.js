@@ -1,13 +1,19 @@
 const properties = [
     {
+        id: 1,
         name: "Cozy Cottage",
         location: "Gisborne",
         price: "$200,000",
         bedrooms: 2,
         bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?cozy+cottage"
+        image: "https://source.unsplash.com/category/house/?cozy+cottage",
+        description: `Welcome to "Cozy Cottage" nestled in the serene locale of Gisborne, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $200,000, this charming abode boasts 2 snug bedrooms and 2 immaculate bathrooms, ensuring comfort and convenience for its lucky inhabitants.
+        <br></br>Picture yourself unwinding in the cozy ambiance of this cottage, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful.
+        <br></br>Immerse yourself in the beauty of nature as you explore the surrounding landscapes, or simply bask in the tranquility of your own private haven. With its inviting interiors and picturesque surroundings, "Cozy Cottage" is more than just a home – it's a retreat for the soul.
+        <br></br>Indulge in the simple joys of life and make memories to last a lifetime in this idyllic sanctuary. Don't miss your chance to own a piece of paradise – schedule a viewing today and let the magic of "Cozy Cottage" capture your heart.`
     },
     {
+        id: 2,
         name: "Modern Loft",
         location: "Bay Of Plenty",
         price: "$350,000",
@@ -16,6 +22,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?modern+loft"
     },
     {
+        id: 3,
         name: "Seaside Villa",
         location: "Northland",
         price: "$1,000,000",
@@ -24,6 +31,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?seaside+villa"
     },
     {
+        id: 4,
         name: "Rustic Cabin",
         location: "Marlborough",
         price: "$150,000",
@@ -32,6 +40,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?rustic+cabin"
     },
     {
+        id: 5,
         name: "Urban Apartment",
         location: "Wellington",
         price: "$500,000",
@@ -39,8 +48,8 @@ const properties = [
         bathrooms: 1.5,
         image: "https://source.unsplash.com/category/house/?urban+apartment"
     },
-    // Add more properties with random information here...
     {
+        id: 6,
         name: "Luxury Penthouse",
         location: "Nelson",
         price: "$2,200,000",
@@ -49,6 +58,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?luxury+penthouse"
     },
     {
+        id: 7,
         name: "Beachfront Villa",
         location: "Bay Of Plenty",
         price: "$1,800,000",
@@ -57,6 +67,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?beachfront+villa"
     },
     {
+        id: 8,
         name: "Countryside Estate",
         location: "Canterbury",
         price: "$1,600,000",
@@ -65,6 +76,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?countryside+estate"
     },
     {
+        id: 9,
         name: "Downtown Condo",
         location: "Auckland",
         price: "$700,000",
@@ -73,6 +85,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?downtown+condo"
     },
     {
+        id: 10,
         name: "Mountain Chalet",
         location: "Otago",
         price: "$900,000",
@@ -81,6 +94,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?mountain+chalet"
     },
     {
+        id: 11,
         name: "Luxury Penthouse",
         location: "Nelson",
         price: "$2,200,000",
@@ -89,6 +103,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?luxury+penthouse"
     },
     {
+        id: 12,
         name: "Beachfront Villa",
         location: "Bay Of Plenty",
         price: "$1,800,000",
@@ -97,6 +112,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?beachfront+villa"
     },
     {
+        id: 13,
         name: "Countryside Estate",
         location: "Canterbury",
         price: "$1,600,000",
@@ -105,6 +121,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?countryside+estate"
     },
     {
+        id: 14,
         name: "Downtown Condo",
         location: "Auckland",
         price: "$700,000",
@@ -113,6 +130,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?downtown+condo"
     },
     {
+        id: 15,
         name: "Mountain Chalet",
         location: "Otago",
         price: "$900,000",
@@ -121,6 +139,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?mountain+chalet"
     },
     {
+        id: 16,
         name: "Sunny Bungalow",
         location: "Hawkes Bay",
         price: "$280,000",
@@ -129,6 +148,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?sunny+bungalow"
     },
     {
+        id: 17,
         name: "Oceanview Condo",
         location: "West Coast",
         price: "$420,000",
@@ -137,6 +157,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?oceanview+condo"
     },
     {
+        id: 18,
         name: "Country Farmhouse",
         location: "Manawatu",
         price: "$550,000",
@@ -145,6 +166,7 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?country+farmhouse"
     },
     {
+        id: 19,
         name: "City Penthouse",
         location: "Taranaki",
         price: "$1,200,000",
@@ -153,284 +175,13 @@ const properties = [
         image: "https://source.unsplash.com/category/house/?city+penthouse"
     },
     {
+        id: 20,
         name: "Lakeside Retreat",
         location: "Waikato",
         price: "$780,000",
         bedrooms: 5,
         bathrooms: 4,
         image: "https://source.unsplash.com/category/house/?lakeside+retreat"
-    },
-    {
-        name: "Riverside Mansion",
-        location: "Southland",
-        price: "$3,500,000",
-        bedrooms: 6,
-        bathrooms: 5,
-        image: "https://source.unsplash.com/category/house/?riverside+mansion"
-    },
-    {
-        name: "Country Cottage",
-        location: "Nelson",
-        price: "$320,000",
-        bedrooms: 2,
-        bathrooms: 1,
-        image: "https://source.unsplash.com/category/house/?country+cottage"
-    },
-    {
-        name: "Garden Villa",
-        location: "Marlborough",
-        price: "$880,000",
-        bedrooms: 4,
-        bathrooms: 3.5,
-        image: "https://source.unsplash.com/category/house/?garden+villa"
-    },
-    {
-        name: "Downtown Loft",
-        location: "Auckland",
-        price: "$670,000",
-        bedrooms: 2,
-        bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?downtown+loft"
-    },
-    {
-        name: "Rural Retreat",
-        location: "Canterbury",
-        price: "$460,000",
-        bedrooms: 3,
-        bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?rural+retreat"
-    },
-    {
-        name: "Oceanfront Retreat",
-        location: "Waikato",
-        price: "$780,000",
-        bedrooms: 3,
-        bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?oceanfront+retreat"
-    },
-    {
-        name: "Countryside Cabin",
-        location: "West Coast",
-        price: "$320,000",
-        bedrooms: 2,
-        bathrooms: 1,
-        image: "https://source.unsplash.com/category/house/?countryside+cabin"
-    },
-    {
-        name: "Downtown Penthouse",
-        location: "Auckland",
-        price: "$1,200,000",
-        bedrooms: 4,
-        bathrooms: 3,
-        image: "https://source.unsplash.com/category/house/?downtown+penthouse"
-    },
-    {
-        name: "Lakeview Cottage",
-        location: "Taranaki",
-        price: "$450,000",
-        bedrooms: 3,
-        bathrooms: 2.5,
-        image: "https://source.unsplash.com/category/house/?lakeview+cottage"
-    },
-    {
-        name: "Rural Farmhouse",
-        location: "Canterbury",
-        price: "$580,000",
-        bedrooms: 4,
-        bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?rural+farmhouse"
-    },
-    {
-        name: "Beachside Bungalow",
-        location: "Bay Of Plenty",
-        price: "$650,000",
-        bedrooms: 3,
-        bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?beachside+bungalow"
-    },
-    {
-        name: "Cityscape Apartment",
-        location: "Wellington",
-        price: "$400,000",
-        bedrooms: 1,
-        bathrooms: 1,
-        image: "https://source.unsplash.com/category/house/?cityscape+apartment"
-    },
-    {
-        name: "Mountain View Chalet",
-        location: "Otago",
-        price: "$890,000",
-        bedrooms: 4,
-        bathrooms: 3.5,
-        image: "https://source.unsplash.com/category/house/?mountain+view+chalet"
-    },
-    {
-        name: "Lakeside Lodge",
-        location: "Nelson",
-        price: "$1,100,000",
-        bedrooms: 5,
-        bathrooms: 4,
-        image: "https://source.unsplash.com/category/house/?lakeside+lodge"
-    },
-    {
-        name: "Vineyard Estate",
-        location: "Marlborough",
-        price: "$2,800,000",
-        bedrooms: 6,
-        bathrooms: 5,
-        image: "https://source.unsplash.com/category/house/?vineyard+estate"
-    },
-    {
-        name: "Ski Chalet",
-        location: "Canterbury",
-        price: "$1,350,000",
-        bedrooms: 5,
-        bathrooms: 4.5,
-        image: "https://source.unsplash.com/category/house/?ski+chalet"
-    },
-    {
-        name: "Beachfront Mansion",
-        location: "Bay Of Plenty",
-        price: "$3,500,000",
-        bedrooms: 7,
-        bathrooms: 6,
-        image: "https://source.unsplash.com/category/house/?beachfront+mansion"
-    },
-    {
-        name: "Riverside Cottage",
-        location: "Northland",
-        price: "$280,000",
-        bedrooms: 2,
-        bathrooms: 1,
-        image: "https://source.unsplash.com/category/house/?riverside+cottage"
-    },
-    {
-        name: "Downtown Townhouse",
-        location: "Auckland",
-        price: "$850,000",
-        bedrooms: 3,
-        bathrooms: 2.5,
-        image: "https://source.unsplash.com/category/house/?downtown+townhouse"
-    },
-    {
-        name: "Country Manor",
-        location: "Taranaki",
-        price: "$1,900,000",
-        bedrooms: 8,
-        bathrooms: 7,
-        image: "https://source.unsplash.com/category/house/?country+manor"
-    },
-    {
-        name: "City Skyline Apartment",
-        location: "Wellington",
-        price: "$600,000",
-        bedrooms: 2,
-        bathrooms: 1.5,
-        image: "https://source.unsplash.com/category/house/?city+skyline+apartment"
-    },
-    {
-        name: "Hilltop Retreat",
-        location: "Nelson",
-        price: "$1,650,000",
-        bedrooms: 4,
-        bathrooms: 3,
-        image: "https://source.unsplash.com/category/house/?hilltop+retreat"
-    },
-    {
-        name: "Countryside Cottage",
-        location: "Marlborough",
-        price: "$380,000",
-        bedrooms: 3,
-        bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?countryside+cottage"
-    },
-    {
-        name: "Lakefront Cabin",
-        location: "Waikato",
-        price: "$320,000",
-        bedrooms: 2,
-        bathrooms: 1,
-        image: "https://source.unsplash.com/category/house/?lakefront+cabin"
-    },
-    {
-        name: "Harborview Apartment",
-        location: "Northland",
-        price: "$550,000",
-        bedrooms: 3,
-        bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?harborview+apartment"
-    },
-    {
-        name: "Riverfront Retreat",
-        location: "Canterbury",
-        price: "$1,200,000",
-        bedrooms: 5,
-        bathrooms: 4,
-        image: "https://source.unsplash.com/category/house/?riverfront+retreat"
-    },
-    {
-        name: "Suburban Villa",
-        location: "Hawkes Bay",
-        price: "$750,000",
-        bedrooms: 4,
-        bathrooms: 3.5,
-        image: "https://source.unsplash.com/category/house/?suburban+villa"
-    },
-    {
-        name: "Cottage by the Sea",
-        location: "Bay Of Plenty",
-        price: "$420,000",
-        bedrooms: 2,
-        bathrooms: 1,
-        image: "https://source.unsplash.com/category/house/?cottage+by+the+sea"
-    },
-    {
-        name: "Highrise Condo",
-        location: "Auckland",
-        price: "$950,000",
-        bedrooms: 2,
-        bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?highrise+condo"
-    },
-    {
-        name: "Rural Retreat",
-        location: "Southland",
-        price: "$500,000",
-        bedrooms: 3,
-        bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?rural+retreat"
-    },
-    {
-        name: "Forest Cabin",
-        location: "Taranaki",
-        price: "$280,000",
-        bedrooms: 1,
-        bathrooms: 1,
-        image: "https://source.unsplash.com/category/house/?forest+cabin"
-    },
-    {
-        name: "Beach House",
-        location: "Bay Of Plenty",
-        price: "$1,100,000",
-        bedrooms: 4,
-        bathrooms: 3,
-        image: "https://source.unsplash.com/category/house/?beach+house"
-    },
-    {
-        name: "Lakefront Lodge",
-        location: "Waikato",
-        price: "$850,000",
-        bedrooms: 4,
-        bathrooms: 2.5,
-        image: "https://source.unsplash.com/category/house/?lakefront+lodge"
-    },
-    {
-        name: "Urban Loft",
-        location: "Wellington",
-        price: "$670,000",
-        bedrooms: 2,
-        bathrooms: 1.5,
-        image: "https://source.unsplash.com/category/house/?urban+loft"
     }
 ];
 
@@ -537,15 +288,12 @@ function populateResults(filteredResults) {
                 <div class="swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="${property.image}" alt="" class="property-image"></div>
-                    <div class="swiper-slide"><img src="${property.image}" alt="" class="property-image"></div>
-                    <div class="swiper-slide"><img src="${property.image}" alt="" class="property-image"></div>
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="${property.image}" alt="${property.name} image 1" class="property-image" value=${property.id}></div>
+                        <div class="swiper-slide"><img src="${property.image}" alt="${property.name} image 2" class="property-image" value=${property.id}></div>
+                        <div class="swiper-slide"><img src="${property.image}" alt="${property.name} image 3" class="property-image" value=${property.id}></div>
                     </div>
-
-                    <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
-                
                 </div>
                 <div class="property-details">
                     <h2>${property.name}</h2>
@@ -587,9 +335,29 @@ function attachClickToImages() {
 
     for (let i = 0; i < images.length; i++) {
         images[i].addEventListener('click', function(e) {
-            console.log("image clicked");
+            const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            detailsModal.dataset.scrollPosition = scrollPosition; // Store the scroll position in the dataset attribute
+            const rect = e.target.getBoundingClientRect(); // Get the position of the clicked image relative to the viewport
+            const imageTop = rect.top + scrollPosition; // Calculate the top position of the clicked image
+            const windowHeight = window.innerHeight;
+            const dialogHeight = detailsModal.offsetHeight;
+            const viewportTop = scrollPosition;
+
+            let dialogTop = viewportTop + (windowHeight - dialogHeight) / 2; // Calculate the top position for the dialog to be centered
+
+            // Ensure the dialog doesn't go above or below the viewport
+            if (dialogTop < imageTop) {
+                dialogTop = imageTop; // Place the dialog just below the clicked image if there's enough space
+            } else if (dialogTop + dialogHeight > windowHeight + viewportTop) {
+                dialogTop = windowHeight + viewportTop - dialogHeight; // Place the dialog at the bottom of the viewport if there's not enough space
+            }
+
+            detailsModal.style.top = dialogTop + 'px'; // Set the top position of the dialog
             detailsModal.showModal();
-            closeDetailsModal()
+            document.body.classList.add('modal-open'); // Add the class to disable scrolling
+            closeDetailsModal();
+            console.log(e.target.getAttribute('value'));
+            populateModal(e.target.getAttribute('value'));
         })
     }
 }
@@ -598,7 +366,29 @@ function closeDetailsModal() {
     const close = document.getElementById('close-modal');
     const detailsModal = document.getElementById('details-modal');
     close.addEventListener('click', function() {
-        detailsModal.close()
+        detailsModal.close();
+        document.body.classList.remove('modal-open'); // Remove the class to enable scrolling
+        // Restore the scroll position when closing the dialog
+        const scrollPosition = detailsModal.dataset.scrollPosition || 0; // Retrieve the stored scroll position
+        window.scrollTo(0, scrollPosition); // Restore the scroll position
     });
 }
+
+function populateModal(imageId) {
+    const detailsModal = document.querySelector('.modal-contents');
+
+    detailsModal.innerHTML = `
+        <img src="${properties[imageId - 1].image}" alt="${properties[imageId - 1].name} image 1">
+        <h2>${properties[imageId - 1].name}</h2>
+        <p>${properties[imageId - 1].location}</p>
+        <h4>${properties[imageId - 1].price}</h4>
+        <div class="modal-ammenities">
+            <p>${properties[imageId - 1].bedrooms} <i class="fa-solid fa-bed"></i></p>
+            <p>${properties[imageId - 1].bathrooms} <i class="fa-solid fa-bath"></i></p>
+        </div>
+        <p class="property-description">${properties[imageId - 1].description}</p>
+        <button class="booking-button">Enquire Now</button>
+    `
+}
+
 
