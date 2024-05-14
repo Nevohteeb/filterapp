@@ -17,7 +17,8 @@ const properties = [
         price: "$350,000",
         bedrooms: 3,
         bathrooms: 2.5,
-        image: "https://source.unsplash.com/category/house/?modern+loft"
+        image: "https://source.unsplash.com/category/house/?modern+loft",
+        description: `Step into contemporary living with "Modern Loft" located in the vibrant Bay Of Plenty. For $350,000, enjoy spacious open-plan living with 3 chic bedrooms and 2.5 stylish bathrooms. This loft epitomizes modern elegance and convenience, perfect for urban dwellers looking for a trendy home.`
     },
     {
         id: 3,
@@ -26,7 +27,8 @@ const properties = [
         price: "$1,000,000",
         bedrooms: 4,
         bathrooms: 3,
-        image: "https://source.unsplash.com/category/house/?seaside+villa"
+        image: "https://source.unsplash.com/category/house/?seaside+villa",
+        description: `Experience coastal luxury at "Seaside Villa" in Northland, priced at $1,000,000. This exquisite property offers 4 spacious bedrooms and 3 pristine bathrooms, all with stunning sea views. Perfect for those who dream of waking up to the sound of the waves and spending their days on the beach.`
     },
     {
         id: 4,
@@ -35,7 +37,8 @@ const properties = [
         price: "$150,000",
         bedrooms: 1,
         bathrooms: 1,
-        image: "https://source.unsplash.com/category/house/?rustic+cabin"
+        image: "https://source.unsplash.com/category/house/?rustic+cabin",
+        description: `Escape to "Rustic Cabin" in Marlborough for just $150,000. This charming 1-bedroom, 1-bathroom retreat is perfect for solo adventurers or couples seeking a peaceful getaway. Embrace the simplicity and charm of cabin life, surrounded by nature's beauty.`
     },
     {
         id: 5,
@@ -44,7 +47,8 @@ const properties = [
         price: "$500,000",
         bedrooms: 2,
         bathrooms: 1.5,
-        image: "https://source.unsplash.com/category/house/?urban+apartment"
+        image: "https://source.unsplash.com/category/house/?urban+apartment",
+        description: `Live in the heart of the city with "Urban Apartment" in Wellington. At $500,000, this stylish apartment features 2 comfortable bedrooms and 1.5 modern bathrooms. Ideal for professionals or small families wanting to be close to all the urban amenities and cultural attractions.`
     },
     {
         id: 6,
@@ -53,7 +57,8 @@ const properties = [
         price: "$2,200,000",
         bedrooms: 4,
         bathrooms: 3.5,
-        image: "https://source.unsplash.com/category/house/?luxury+penthouse"
+        image: "https://source.unsplash.com/category/house/?luxury+penthouse",
+        description: `Indulge in opulence at "Luxury Penthouse" in Nelson, available for $2,200,000. This lavish property boasts 4 spacious bedrooms and 3.5 exquisite bathrooms. Enjoy panoramic views, top-of-the-line amenities, and unparalleled elegance in every detail.`
     },
     {
         id: 7,
@@ -62,7 +67,8 @@ const properties = [
         price: "$1,800,000",
         bedrooms: 5,
         bathrooms: 4,
-        image: "https://source.unsplash.com/category/house/?beachfront+villa"
+        image: "https://source.unsplash.com/category/house/?beachfront+villa",
+        description: `Welcome to paradise at "Beachfront Villa" in Bay Of Plenty, priced at $1,800,000. This luxurious villa features 5 elegant bedrooms and 4 modern bathrooms, offering direct beach access and stunning ocean views. Perfect for those seeking a lavish coastal lifestyle.`
     },
     {
         id: 8,
@@ -71,7 +77,8 @@ const properties = [
         price: "$1,600,000",
         bedrooms: 6,
         bathrooms: 5,
-        image: "https://source.unsplash.com/category/house/?countryside+estate"
+        image: "https://source.unsplash.com/category/house/?countryside+estate",
+        description: `Discover grandeur at "Countryside Estate" in Canterbury for $1,600,000. This expansive estate offers 6 spacious bedrooms and 5 luxurious bathrooms. Set amidst rolling hills and lush landscapes, it's the perfect retreat for those craving tranquility and elegance in the countryside.`
     },
     {
         id: 9,
@@ -80,7 +87,8 @@ const properties = [
         price: "$700,000",
         bedrooms: 2,
         bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?downtown+condo"
+        image: "https://source.unsplash.com/category/house/?downtown+condo",
+        description: `Experience urban sophistication at "Downtown Condo" in Auckland, available for $700,000. This modern condo features 2 stylish bedrooms and 2 sleek bathrooms. Perfect for city dwellers who value convenience and contemporary living in the heart of the action.`
     },
     {
         id: 10,
@@ -89,7 +97,8 @@ const properties = [
         price: "$900,000",
         bedrooms: 3,
         bathrooms: 2.5,
-        image: "https://source.unsplash.com/category/house/?mountain+chalet"
+        image: "https://source.unsplash.com/category/house/?mountain+chalet",
+        description: `Retreat to "Mountain Chalet" in Otago, priced at $900,000. This picturesque chalet offers 3 cozy bedrooms and 2.5 modern bathrooms. Nestled in the mountains, it's perfect for those seeking adventure and serenity in a beautiful alpine setting.`
     },
     {
         id: 11,
@@ -98,7 +107,8 @@ const properties = [
         price: "$2,200,000",
         bedrooms: 4,
         bathrooms: 3.5,
-        image: "https://source.unsplash.com/category/house/?luxury+penthouse"
+        image: "https://source.unsplash.com/category/house/?luxury+penthouse",
+        description: `Indulge in opulence at "Luxury Penthouse" in Nelson, available for $2,200,000. This lavish property boasts 4 spacious bedrooms and 3.5 exquisite bathrooms. Enjoy panoramic views, top-of-the-line amenities, and unparalleled elegance in every detail.`
     },
     {
         id: 12,
@@ -107,7 +117,8 @@ const properties = [
         price: "$1,800,000",
         bedrooms: 5,
         bathrooms: 4,
-        image: "https://source.unsplash.com/category/house/?beachfront+villa"
+        image: "https://source.unsplash.com/category/house/?beachfront+villa",
+        description: `Welcome to paradise at "Beachfront Villa" in Bay Of Plenty, priced at $1,800,000. This luxurious villa features 5 elegant bedrooms and 4 modern bathrooms, offering direct beach access and stunning ocean views. Perfect for those seeking a lavish coastal lifestyle.`
     },
     {
         id: 13,
@@ -116,7 +127,8 @@ const properties = [
         price: "$1,600,000",
         bedrooms: 6,
         bathrooms: 5,
-        image: "https://source.unsplash.com/category/house/?countryside+estate"
+        image: "https://source.unsplash.com/category/house/?countryside+estate",
+        description: `Discover grandeur at "Countryside Estate" in Canterbury for $1,600,000. This expansive estate offers 6 spacious bedrooms and 5 luxurious bathrooms. Set amidst rolling hills and lush landscapes, it's the perfect retreat for those craving tranquility and elegance in the countryside.`
     },
     {
         id: 14,
@@ -125,7 +137,8 @@ const properties = [
         price: "$700,000",
         bedrooms: 2,
         bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?downtown+condo"
+        image: "https://source.unsplash.com/category/house/?downtown+condo",
+        description: `Experience urban sophistication at "Downtown Condo" in Auckland, available for $700,000. This modern condo features 2 stylish bedrooms and 2 sleek bathrooms. Perfect for city dwellers who value convenience and contemporary living in the heart of the action.`
     },
     {
         id: 15,
@@ -134,7 +147,8 @@ const properties = [
         price: "$900,000",
         bedrooms: 3,
         bathrooms: 2.5,
-        image: "https://source.unsplash.com/category/house/?mountain+chalet"
+        image: "https://source.unsplash.com/category/house/?mountain+chalet",
+        description: `Retreat to "Mountain Chalet" in Otago, priced at $900,000. This picturesque chalet offers 3 cozy bedrooms and 2.5 modern bathrooms. Nestled in the mountains, it's perfect for those seeking adventure and serenity in a beautiful alpine setting.`
     },
     {
         id: 16,
@@ -143,7 +157,8 @@ const properties = [
         price: "$280,000",
         bedrooms: 3,
         bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?sunny+bungalow"
+        image: "https://source.unsplash.com/category/house/?sunny+bungalow",
+        description: `Bask in the warmth of "Sunny Bungalow" in Hawkes Bay, available for $280,000. This charming home features 3 bright bedrooms and 2 modern bathrooms. Perfect for families or retirees, it offers a cozy and inviting atmosphere with plenty of natural light.`
     },
     {
         id: 17,
@@ -152,7 +167,8 @@ const properties = [
         price: "$420,000",
         bedrooms: 2,
         bathrooms: 1.5,
-        image: "https://source.unsplash.com/category/house/?oceanview+condo"
+        image: "https://source.unsplash.com/category/house/?oceanview+condo",
+        description: `Enjoy breathtaking views at "Oceanview Condo" on the West Coast, priced at $420,000. This stylish condo offers 2 comfortable bedrooms and 1.5 bathrooms. Ideal for those who love the ocean, it provides stunning vistas and a relaxed coastal lifestyle.`
     },
     {
         id: 18,
@@ -161,7 +177,8 @@ const properties = [
         price: "$550,000",
         bedrooms: 4,
         bathrooms: 3,
-        image: "https://source.unsplash.com/category/house/?country+farmhouse"
+        image: "https://source.unsplash.com/category/house/?country+farmhouse",
+        description: `Embrace rustic charm at "Country Farmhouse" in Manawatu, available for $550,000. This spacious farmhouse features 4 cozy bedrooms and 3 bathrooms, perfect for family living. Set on expansive grounds, it's ideal for those seeking a rural lifestyle.`
     },
     {
         id: 19,
@@ -170,7 +187,8 @@ const properties = [
         price: "$1,200,000",
         bedrooms: 3,
         bathrooms: 2,
-        image: "https://source.unsplash.com/category/house/?city+penthouse"
+        image: "https://source.unsplash.com/category/house/?city+penthouse",
+        description: `Live in luxury at "City Penthouse" in Taranaki, priced at $1,200,000. This upscale penthouse offers 3 elegant bedrooms and 2 modern bathrooms. With stunning city views and top-tier amenities, it's perfect for those who enjoy a sophisticated urban lifestyle.`
     },
     {
         id: 20,
@@ -179,7 +197,8 @@ const properties = [
         price: "$780,000",
         bedrooms: 5,
         bathrooms: 4,
-        image: "https://source.unsplash.com/category/house/?lakeside+retreat"
+        image: "https://source.unsplash.com/category/house/?lakeside+retreat",
+        description: `Escape to "Lakeside Retreat" in Waikato, available for $780,000. This beautiful property features 5 spacious bedrooms and 4 bathrooms, offering serene lake views and tranquility. Ideal for families or those seeking a peaceful getaway.`
     }
 ];
 
