@@ -8,9 +8,7 @@ const properties = [
         bathrooms: 2,
         image: "https://source.unsplash.com/category/house/?cozy+cottage",
         description: `Welcome to "Cozy Cottage" nestled in the serene locale of Gisborne, offering a tranquil escape from the hustle and bustle of urban life. Priced at a steal for $200,000, this charming abode boasts 2 snug bedrooms and 2 immaculate bathrooms, ensuring comfort and convenience for its lucky inhabitants.
-        <br></br>Picture yourself unwinding in the cozy ambiance of this cottage, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful.
-        <br></br>Immerse yourself in the beauty of nature as you explore the surrounding landscapes, or simply bask in the tranquility of your own private haven. With its inviting interiors and picturesque surroundings, "Cozy Cottage" is more than just a home – it's a retreat for the soul.
-        <br></br>Indulge in the simple joys of life and make memories to last a lifetime in this idyllic sanctuary. Don't miss your chance to own a piece of paradise – schedule a viewing today and let the magic of "Cozy Cottage" capture your heart.`
+        <br></br>Picture yourself unwinding in the cozy ambiance of this cottage, where every corner exudes warmth and relaxation. Whether you're curling up with a book by the fireplace or savoring a cup of tea on the quaint porch, each moment spent here promises to be nothing short of blissful.`
     },
     {
         id: 2,
@@ -221,17 +219,37 @@ priceMax.addEventListener("change", function() {
 // Define filterAndPopulateResults function
 function filterAndPopulateResults() {
     const filteredProperties = filterProperties();
-    const sortedProperties = sortPropertiesByPrice(filteredProperties); // New line to sort properties
-    populateResults(sortedProperties);
+    // const sortedProperties = sortPropertiesByPriceLowToHigh(filteredProperties); // New line to sort properties
+    // populateResults(sortedProperties);
+    populateResults(filteredProperties);
 }
 
+// *** SORTING FUNCTIONS ***
 // Create a function to sort properties by price
-function sortPropertiesByPrice(properties) {
+function sortPropertiesByPriceLowToHigh(properties) {
     // Sort the properties array by price from lowest to highest
     return properties.sort((a, b) => {
         const priceA = parseFloat(a.price.replace(/\$/g, '').replace(/,/g, ''));
         const priceB = parseFloat(b.price.replace(/\$/g, '').replace(/,/g, ''));
         return priceA - priceB;
+    });
+}
+
+function sortPropertiesByPriceHighToLow(properties) {
+    // Sort the properties array by price from lowest to highest
+    return properties.sort((a, b) => {
+        const priceA = parseFloat(a.price.replace(/\$/g, '').replace(/,/g, ''));
+        const priceB = parseFloat(b.price.replace(/\$/g, '').replace(/,/g, ''));
+        return priceB - priceA;
+    });
+}
+
+function sortPropertiesAlphabetical(properties) {
+    // Sort the properties array by price from lowest to highest
+    return properties.sort((a, b) => {
+        const nameA = a.name.toLowerCase();
+        const nameB = b.name.toLowerCase();
+        return nameA.localeCompare(nameB)
     });
 }
 
@@ -390,5 +408,29 @@ function populateModal(imageId) {
         <button class="booking-button">Enquire Now</button>
     `
 }
+
+
+// Sort Buttons
+const highToLowBtn = document.getElementById('price-high-to-low-btn');
+const lowToHighBtn = document.getElementById('price-low-to-high-btn');
+const alphabeticalBtn = document.getElementById('alphabetical-btn');
+
+highToLowBtn.addEventListener('click', function() {
+    const filteredProperties = filterProperties();
+    const sortedProperties = sortPropertiesByPriceHighToLow(filteredProperties); // New line to sort properties
+    populateResults(sortedProperties);
+});
+
+lowToHighBtn.addEventListener('click', function() {
+    const filteredProperties = filterProperties();
+    const sortedProperties = sortPropertiesByPriceLowToHigh(filteredProperties); // New line to sort properties
+    populateResults(sortedProperties);
+});
+
+alphabeticalBtn.addEventListener('click', function() {
+    const filteredProperties = filterProperties();
+    const sortedProperties = sortPropertiesAlphabetical(filteredProperties); // New line to sort properties
+    populateResults(sortedProperties);
+});
 
 
